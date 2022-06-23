@@ -1,7 +1,37 @@
+/*initialisation grille */
+.conteneur-grid{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	height: 100%;
+	background: #fff;
+}
+/*fin initialisation grille */
+
+
+.element{
+	color: #fff;
+}
+
+.droite{
+	display: flex;
+	align-items: center; /*alignement par rapport au cross axis */
+	justify-content: center;/*alignement par rapport au main axis */
+	flex-wrap: wrap; /* aller a la ligne */
+	flex-direction: row; /* direction en mode ligne */
+	background: #ff005a;
+}
+
+
+.assurance-e{
+	font-size: 400%;
+}
+
+
+/*style pour la navigation */
 .navigation{
 	list-style: none;
 	padding: 0;
-	margin: 0;
+	margin: 20px;
 }
 
 .navigation a{
@@ -26,3 +56,4 @@
         justify-content: flex-end;      /* 3 */
 }
 
+/* fin style pour la navigation */

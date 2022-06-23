@@ -1,0 +1,28 @@
+.navigation{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navigation a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 2px;
+}
+
+
+/**
+ * 1. On definit un contexte Flexbox sur le parent.
+ * 2. On definit le sens de gauche a droite
+ * == flex-direction: row et flex-wrap: wrap
+ * 3. on aligne les elment a droite.
+ */
+
+
+.navigation{
+        display: flex;                  /* 1 */
+        flex-flow: row wrap;            /* 2 */
+        justify-content: flex-end;      /* 3 */
+}
+

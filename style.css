@@ -57,3 +57,11 @@
 }
 
 /* fin style pour la navigation */
+
+/* gestion de la partie droite qui à le formulaire */
+.conteneur-flex{
+	display: flex;
+	flex-direction: column;
+       	flex-wrap: wrap;
+	margin: 20px;
+}

@@ -1,8 +1,8 @@
 /*initialisation grille */
 .conteneur-grid{
-	display: grid;
-	grid-template-columns: 50% 50%;
-	height: 100%;
+	display: grid;/*initialisation de la grille */
+	grid-template-columns: 50% 50%;/*definition de deux colone qui occupe 50% de la page */
+	height: 100%; /* ma grille occupe toute la hauteur de la page */
 	background: #fff;
 }
 /*fin initialisation grille */
@@ -13,7 +13,7 @@
 }
 
 .droite{
-	display: flex;
+	display: flex; /*intialisation du flexbox*/
 	align-items: center; /*alignement par rapport au cross axis */
 	justify-content: center;/*alignement par rapport au main axis */
 	flex-wrap: wrap; /* aller a la ligne */
@@ -28,10 +28,19 @@
 
 
 /*style pour la navigation */
+/**
+ * 1. On definit un contexte Flexbox sur le parent.
+ * 2. On definit le sens de gauche a droite
+ * == flex-direction: row et flex-wrap: wrap
+ * 3. on aligne les elment a droite.
+ */
 .navigation{
 	list-style: none;
 	padding: 0;
-	margin: 20px;
+	margin: 0;
+        display: flex;                  /* 1 */
+        flex-flow: row wrap;            /* 2 */
+        justify-content: flex-end;      /* 3 */
 }
 
 .navigation a{
@@ -41,27 +50,35 @@
 	padding: 2px;
 }
 
-
-/**
- * 1. On definit un contexte Flexbox sur le parent.
- * 2. On definit le sens de gauche a droite
- * == flex-direction: row et flex-wrap: wrap
- * 3. on aligne les elment a droite.
- */
-
-
-.navigation{
-        display: flex;                  /* 1 */
-        flex-flow: row wrap;            /* 2 */
-        justify-content: flex-end;      /* 3 */
-}
-
 /* fin style pour la navigation */
 
 /* gestion de la partie droite qui à le formulaire */
 .conteneur-flex{
 	display: flex;
-	flex-direction: column;
-       	flex-wrap: wrap;
-	margin: 20px;
+	flex-flow: column wrap; /*repatir en colone et avec retour a la ligne */
+	justify-content: space-around; /*repartission equitable des espaces */
+	align-items: center;/* par defaut c'est stretch qui veut dire que les elements s'etirent pour remplire l'espace restant*/
+	height: 94%;
 }
+
+
+.button{
+	background: #ff005a;
+	font-size: 200%;
+	text-align: center;
+	width: 50%;
+	padding: 2%;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+.button a{
+	text-decoration: none;
+	color: white;
+}
+
+.button:hover{
+	background: #e10052;
+}
+
+/*debut parti responsive*/

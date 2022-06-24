@@ -40,7 +40,7 @@
 	margin: 0;
         display: flex;                  /* 1 */
         flex-flow: row wrap;            /* 2 */
-        justify-content: flex-end;      /* 3 */
+        justify-content: space-between;      /* 3 */
 }
 
 .navigation a{
@@ -82,3 +82,12 @@
 }
 
 /*debut parti responsive*/
+@media(max-width: 1000px){
+	.conteneur-grid{
+		grid-template-columns: 100%;/*definition de deux colone qui occupe 50% de la page */
+	}
+	.droite{
+		display: none;
+	}
+}
+/*fin partie responsive*/

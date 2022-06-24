@@ -81,6 +81,10 @@
 	background: #e10052;
 }
 
+h2{
+	display: none;
+}
+
 /*debut parti responsive*/
 @media(max-width: 1000px){
 	.conteneur-grid{
@@ -88,6 +92,14 @@
 	}
 	.droite{
 		display: none;
+	}
+	h2{
+		display: block;
+		margin: 0;
+		padding: 0;
+		color: #313131;
+		text-align: center;
+		font-size: 20px;
 	}
 }
 /*fin partie responsive*/

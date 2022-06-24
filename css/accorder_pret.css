@@ -119,7 +119,7 @@ h2{
 	background: #e10052;
 }
 
-.user-box .lien{
+/*.user-box .lien{
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -130,7 +130,7 @@ h2{
 
 .user-box .lien:hover{
 	color: #000;
-}
+}*/
 
 /*debut parti responsive*/
 @media(max-width: 1000px){

@@ -1,0 +1,69 @@
+/*initialisation grille */
+.conteneur-grid{
+	display: grid;/*initialisation de la grille */
+	grid-template-columns: 50% 50%;/*definition de deux colone qui occupe 50% de la page */
+	height: 100%; /* ma grille occupe toute la hauteur de la page */
+	background: #fff;
+}
+/*fin initialisation grille */
+
+
+.element{
+	color: #fff;
+}
+
+.droite{
+	display: flex; /*intialisation du flexbox*/
+	align-items: center; /*alignement par rapport au cross axis */
+	justify-content: center;/*alignement par rapport au main axis */
+	flex-wrap: wrap; /* aller a la ligne */
+	flex-direction: row; /* direction en mode ligne */
+	background: #ff005a;
+}
+
+
+.assurance-e{
+	font-size: 400%;
+}
+
+
+/*style pour la navigation */
+/**
+ * 1. On definit un contexte Flexbox sur le parent.
+ * 2. On definit le sens de gauche a droite
+ * == flex-direction: row et flex-wrap: wrap
+ * 3. on aligne les elment a droite.
+ */
+.navigation{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+        display: flex;                  /* 1 */
+        flex-flow: row wrap;            /* 2 */
+        justify-content: space-between;      /* 3 */
+}
+
+.navigation a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 2px;
+}
+
+/* fin style pour la navigation */
+
+/* gestion de la partie droite qui à le formulaire */
+
+
+
+
+/*debut parti responsive*/
+@media(max-width: 1000px){
+	.conteneur-grid{
+		grid-template-columns: 100%;/*definition de deux colone qui occupe 50% de la page */
+	}
+	.droite{
+		display: none;
+	}
+}
+/*fin partie responsive*/
